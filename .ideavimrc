@@ -11,8 +11,8 @@ noremap <C-j> gj<C-e>
 noremap <C-k> gk<C-y>
 
 " Left / right
-noremap <C-h> h
-noremap <C-l> l
+" noremap <C-h> h
+" noremap <C-l> l
 
 " Insert mode
 inoremap <C-k> <Up>
@@ -25,12 +25,19 @@ noremap H ,
 noremap L ;
 
 " Home row beginning / end of line
-noremap h ^
-noremap l $
+" noremap h ^
+" noremap l $
 
 " Previous / next word
-noremap k #
-noremap j *
+" noremap k #
+" noremap j *
+
+noremap h <Left>
+noremap l <Right>
+noremap j <Down>
+noremap k <Up>
+noremap <C-h> ^
+noremap <C-l> $
 
 " ============================================================================
 " Editing
@@ -91,10 +98,14 @@ nnoremap / :action Find<CR>
 nnoremap n :action FindNext<CR>
 nnoremap N :action FindPrevious<CR>
 nnoremap U :action $Redo<CR>
-nnoremap ; :action AceJumpAction<CR>
+nnoremap ; :action AceAction<CR>
 nnoremap <Space>o :action GotoClass<CR>
 nnoremap <Space>O :action GotoFile<CR>
 nnoremap <Space>d :action CloseContent<CR>
 nnoremap <Space>j :action RecentFiles<CR>
 nnoremap <Space>k :action FileStructurePopup<CR>
 nnoremap <Space>h :action QuickJavaDoc<CR>
+nnoremap <Space>f :action ScalaFmtFormat<CR>
+nnoremap <Space>t :action ActivateTerminalToolWindow<CR>
+nnoremap <Space>rr :action ExternalSystem.RefreshAllProjects<CR>
+nnoremap <Space>bb :action CompileProject<CR>
