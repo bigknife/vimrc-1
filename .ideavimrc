@@ -109,3 +109,6 @@ nnoremap <Space>f :action ScalaFmtFormat<CR>
 nnoremap <Space>t :action ActivateTerminalToolWindow<CR>
 nnoremap <Space>rr :action ExternalSystem.RefreshAllProjects<CR>
 nnoremap <Space>bb :action CompileProject<CR>
+nnoremap <Space>im :action ImplementMethods<CR>
+nnoremap <Space>mm :action NextTab<CR>
+nnoremap <Space>nn :action PreviousTab<CR>
