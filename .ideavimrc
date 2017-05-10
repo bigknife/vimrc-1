@@ -94,9 +94,9 @@ nnoremap <Space>vs :source ~/.ideavimrc<CR>
 " IDE actions
 " ============================================================================
 
-nnoremap / :action Find<CR>
-nnoremap n :action FindNext<CR>
-nnoremap N :action FindPrevious<CR>
+" nnoremap / :action Find<CR>
+" nnoremap n :action FindNext<CR>
+" nnoremap N :action FindPrevious<CR>
 nnoremap U :action $Redo<CR>
 nnoremap ; :action AceAction<CR>
 nnoremap <Space>o :action GotoClass<CR>
@@ -112,3 +112,8 @@ nnoremap <Space>bb :action CompileProject<CR>
 nnoremap <Space>im :action ImplementMethods<CR>
 nnoremap <Space>mm :action NextTab<CR>
 nnoremap <Space>nn :action PreviousTab<CR>
+nnoremap <Space>oi :action OptimizeImports<CR>
+nnoremap <Space>ca :action CollapseAllRegions<CR>
+nnoremap <Space>ea :action ExpandAllRegions<CR>
+nnoremap <Space>er :action ExpandRegion<CR>
+nnoremap <Space>cr :action CollapseRegion<CR>
